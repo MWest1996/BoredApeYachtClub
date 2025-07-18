@@ -1,0 +1,125 @@
+:root{
+    --color-blue-500: hsl(215, 51%, 70%);
+    --color-cyan-400: hsl(178, 45%, 44%);
+    --color-blue-950: hsl(217, 54%, 11%);
+    --color-blue-900: hsl(216, 50%, 16%);
+    --color-blue-800: hsl(215, 32%, 27%);
+    --color-white: hsl(0 0 100);
+    --font-body: 'Outfit', Arial, Helvetica, sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--color-blue-950);
+    font-family: var(--font-body);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.wrapper{
+    width: 325px;
+    background-color: var(--color-blue-900);
+    margin: auto;
+    align-content: center;
+    border-radius: 15px;
+    height: 525px;
+}
+
+.artwork {
+    max-width: 290px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+}
+
+.wrapper h1{
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px 30px 5px 20px;
+}
+
+.wrapper h1:hover{
+    color: var(--color-cyan-400);
+    transition-duration: .4s;
+    cursor: pointer;
+}
+
+.wrapper h3{
+    color: var(--color-blue-500);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    margin: 15px 10px 5px 20px;
+}
+
+.info{
+    width: 100%;
+    margin: 15px 10px 15px 20px;
+}
+
+.coinInfo{
+    width: 100%;
+}
+
+.coinInfo img{
+    margin-right: 10px;
+    align-self: auto;
+}
+
+.coinText{
+    color: var(--color-cyan-400);
+    font-weight: 600;
+}
+
+.timeLeft{
+    color: var(--color-blue-500);
+    margin-left: 55px;
+}
+
+.timeLeft img{
+    margin-right: 5px;
+}
+
+hr{
+    width: 85%;
+    margin: auto;
+    color: hsl(215, 51%, 70%);
+    border: .25px solid var(--color-blue-800)
+}
+
+.author img{
+    width: 32px;
+    height: 32px;
+    margin: 10px 15px;
+    border: 1px solid var(--color-white);
+    border-radius: 100%;
+}
+
+.author{
+    color: var(--color-blue-500);
+    font-weight: 300;
+    margin: 0px 5px 5px 10px;
+}
+
+.author a{
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.author a:hover{
+    color: var(--color-cyan-400);
+    transition-duration: .4s;
+}
+
+.attribution { font-size: 11px; text-align: center; color: white; }
+.attribution a { color: hsl(228, 45%, 44%); }

@@ -1,0 +1,173 @@
+:root{
+    --color-blue-500: hsl(215, 51%, 70%);
+    --color-cyan-400: hsl(178, 45%, 44%);
+    --color-blue-950: hsl(217, 54%, 11%);
+    --color-blue-900: hsl(216, 50%, 16%);
+    --color-blue-800: hsl(215, 32%, 27%);
+    --color-white: hsl(0 0 100);
+    --font-body: 'Outfit', Arial, Helvetica, sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--color-blue-950);
+    font-family: var(--font-body);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.wrapper{
+    width: 21.25rem;
+    background-color: var(--color-blue-900);
+    margin: auto;
+    align-content: center;
+    border-radius: 0.938rem;
+}
+
+.artwork {
+    width: 100%;
+    border-radius: 0.625rem;
+    padding: auto;
+    display: block;
+}
+
+.imageContainer{
+    position: relative;
+    width: 18.75rem;
+    margin: 1.25rem;
+    cursor: pointer;
+}
+
+.imageContainer::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-cyan-400);
+    opacity: 0;
+    border-radius: .625rem;
+    transition: opacity .3s ease;
+}
+
+.imageContainer::after{
+    content:"";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    width: 3rem;
+    height: 3rem;
+    background-image: url(images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.imageContainer:hover::before{
+    opacity: .7;
+}
+.imageContainer:hover::after{
+    opacity: 1;
+}
+
+.viewIcon{
+    position: absolute;
+    background-color: var(--color-cyan-400);
+    top: 30%;
+    left: 45%;
+    z-index: 1;
+}
+
+.wrapper h1{
+    color: var(--color-white);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0.938rem 1.875rem 0.313rem 1.25rem;
+}
+
+.wrapper h1:hover{
+    color: var(--color-cyan-400);
+    transition-duration: .4s;
+    cursor: pointer;
+}
+
+.wrapper h3{
+    color: var(--color-blue-500);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.563rem;
+    margin: 0.938rem 0.625rem 0.313rem 1.25rem;
+}
+
+.info{
+    width: 100%;
+    margin: 0.938rem 0.625rem 0.938rem 1.25rem;
+}
+
+.coinInfo{
+    width: 100%;
+}
+
+.coinInfo img{
+    margin-right: 0.625rem;
+    align-self: auto;
+}
+
+.coinText{
+    color: var(--color-cyan-400);
+    font-weight: 600;
+}
+
+.timeLeft{
+    color: var(--color-blue-500);
+    margin-left: 3.438rem;
+}
+
+.timeLeft img{
+    margin-right: 0.313rem;
+}
+
+hr{
+    width: 85%;
+    margin: auto;
+    color: hsl(215, 51%, 70%);
+    border: 0.016rem solid var(--color-blue-800)
+}
+
+.author img{
+    width: 2rem;
+    height: 2rem;
+    margin: 0.625rem 0.938rem;
+    border: 0.063rem solid var(--color-white);
+    border-radius: 100%;
+}
+
+.author{
+    color: var(--color-blue-500);
+    font-weight: 300;
+    margin: 0px 0.313rem 0.313rem 0.625rem;
+}
+
+.author a{
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.author a:hover{
+    color: var(--color-cyan-400);
+    transition-duration: .4s;
+}
+
+.attribution { font-size: 11px; text-align: center; color: white; }
+.attribution a { color: hsl(228, 45%, 44%); }

@@ -101,7 +101,7 @@ body{
     cursor: pointer;
 }
 
-.wrapper h3{
+.wrapper h2{
     color: var(--color-blue-500);
     font-size: 1rem;
     font-weight: 300;
